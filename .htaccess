@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule download/(.*) get.php?a=$1

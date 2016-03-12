@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Send your file per e-mail, simple. </title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+		<link rel="stylesheet" href="common.css">
+		<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script>
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			$('.app_send_box').css('width', '100%');
+		}
+		</script>
+	</head>
+
+	<body>
+
+		<div class="app_send_box">
+			<div class="simpleBox">
+				<h1>Filemailer.net</h1>
+
+				<!--sys_error-->
+				<form class="pure-form pure-form-aligned" action="send.php" method="post" enctype="multipart/form-data">
+				    <fieldset>
+				        <div class="pure-control-group">
+				            <input id="name" type="email" placeholder="Your e-mail address" name="mail">
+				        </div>
+
+				        <div class="pure-control-group">
+				            <input id="password" type="email" placeholder="Recipients e-mail address" name="recipients">
+				        </div>
+
+				        <div class="pure-control-group">
+				            <input id="file" type="file" name="files[]"  multiple="">
+				        </div>
+
+			            <label for="cb" class="pure-checkbox">
+			                <input id="cb" type="checkbox" name="tos"> I agree to the Terms of Service 
+			            </label>
+			            <button type="submit" class="pure-button pure-button-primary">Send</button>
+
+				    </fieldset>
+				</form>
+
+			</div>
+
+			<div class="simpleBox" style="padding-bottom: 25px;">
+				<h2>How does it work?</h2>
+				With this simple application you can send Word, Excel and Powerpoint documents via e-mail. 
+				<br><br>You can send big files via e-mail. It's free, and you can upload up to 100MB for free. 
+				<br><br>Please note that files are deleted after one month after it's downloaded.
+				<br><br>Mail pictures to yourself using your Android or Apple IOS smartphone!
+			</div>
+		</div>
+
+
+	</body>
+</html>
